@@ -1,0 +1,9 @@
+Sub autoexec()
+    Dim strProgramName As String
+    Dim strArgument As String
+
+    strProgramName = "C:\ProdactionOptimization\UI.exe"
+    strArgument = Application.ActiveWorkbook.FullName
+
+    Call Shell("""" & strProgramName & """ """ & strArgument & """", vbNormalFocus)
+End Sub
